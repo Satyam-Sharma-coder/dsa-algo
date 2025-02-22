@@ -16,7 +16,7 @@ const Login = () => {
     const submitHandler = (event) => {
         setLoading(true);
         event.preventDefault();
-        axios.post('https://backend-api-pink-eta.vercel.app/user/login', {
+        axios.post('https://mern-api-peach.vercel.app/user/login', {
             name: userName,
             password: password
         }).then(res => {
