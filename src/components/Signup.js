@@ -20,7 +20,7 @@ const Signup = () => {
         setLoading(true);
         event.preventDefault();
         axios.post('https://mern-api-peach.vercel.app/user/signup', {
-            name: userName,  // changed here
+            userName: userName,  // changed here
         password: password,
         email: email,
         phone: phone
