@@ -19,7 +19,7 @@ const Signup = () => {
     const submitHandler = (event) => {
         setLoading(true);
         event.preventDefault();
-        axios.post('https://backend-api-pink-eta.vercel.app/user/signup', {
+        axios.post('https://mern-api-peach.vercel.app/user/signup', {
             name: userName,  // changed here
         password: password,
         email: email,
