@@ -17,12 +17,12 @@ const Login = () => {
         setLoading(true);
         event.preventDefault();
         axios.post('https://mern-api-peach.vercel.app/user/login', {
-            name: userName,
+            userName: userName,
             password: password
         }).then(res => {
             setLoading(false);
             localStorage.setItem('token', res.data.token);
-            localStorage.setItem('userName', res.data.name);
+            localStorage.setItem('userName', res.data.userName);
             console.log(res.data);
             navigate('/sorting');
         }).catch(err => {
